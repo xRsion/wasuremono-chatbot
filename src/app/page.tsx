@@ -360,7 +360,7 @@ export default function Home() {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact" className="bg-white py-20 px-6">
+      {/* <section id="contact" className="bg-white py-20 px-6">
         <div className="container mx-auto max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             導入のご相談・お問い合わせ
@@ -448,7 +448,7 @@ export default function Home() {
             </Button>
           </form>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-[#fbfafa] py-20 px-6">
