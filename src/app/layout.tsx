@@ -32,13 +32,13 @@ export default function RootLayout({
             __html: `
               window.difyChatbotConfig = {
                 token: '7JBGaf0CpCxWmRSJ',
-                baseUrl: 'http://ai-work.xrsion.co.jp'
+                baseUrl: 'https://ai-work.xrsion.co.jp'
               }
             `
           }}
         />
         <script
-          src="http://ai-work.xrsion.co.jp/embed.min.js"
+          src="https://ai-work.xrsion.co.jp/embed.min.js"
           id="7JBGaf0CpCxWmRSJ"
           defer
         />
