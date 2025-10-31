@@ -19,8 +19,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <div className="font-bold text-lg">忘れ物サポートBot(仮)</div>
-              <div className="text-xs">探す手間を、なくす。</div>
+              <div className="font-bold text-lg">忘れ物サポートBot</div>
+              <div className="text-xs">忘れ物対応を、なくす。</div>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -56,6 +56,9 @@ export default function Home() {
                 </div>
                 <div className="bg-white text-[#040404] px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold whitespace-nowrap">
                   24時間 自動対応
+                </div>
+                <div className="bg-white text-[#040404] px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold whitespace-nowrap">
+                  多言語対応
                 </div>
                 <div className="bg-white text-[#040404] px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold">
                   簡単導入
@@ -155,10 +158,10 @@ export default function Home() {
             忘れ物サポートBotの
           </h2>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">
-            3つの主要機能
+            主要機能
           </h2>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="bg-white/10 rounded-lg p-6 md:p-8">
               <div className="mb-3 md:mb-4 flex justify-center">
                 <Image src="/icons/chat.svg" alt="会話" width={60} height={60} className="md:w-20 md:h-20" />
@@ -176,6 +179,16 @@ export default function Home() {
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">高精度なマッチング</h3>
               <p className="text-gray-300 text-xs md:text-sm leading-relaxed">
                 色・種類・場所・日時など複数の条件から該当する忘れ物を検索。お客様が求める情報に素早くたどり着けます。
+              </p>
+            </div>
+
+            <div className="bg-white/10 rounded-lg p-6 md:p-8">
+              <div className="mb-3 md:mb-4 flex justify-center">
+                <Image src="/icons/globe.svg" alt="多言語" width={60} height={60} className="md:w-20 md:h-20" />
+              </div>
+              <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">多言語対応</h3>
+              <p className="text-gray-300 text-xs md:text-sm leading-relaxed">
+                日本語・英語・中国語・韓国語など複数言語に対応。外国人のお客様もスムーズに忘れ物を検索でき、インバウンド対応の負担を軽減します。
               </p>
             </div>
 
@@ -268,7 +281,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <Image src="/icons/refresh.svg" alt="リアルタイム更新" width={48} height={48} />
@@ -280,6 +293,23 @@ export default function Home() {
             </div>
             <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
               <Image src="/assets/images/merit03.png" alt="リアルタイム更新" width={400} height={225} className="object-cover w-full h-full" />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+              <Image src="/assets/images/merit04.png" alt="インバウンド対応を効率化" width={400} height={225} className="object-cover w-full h-full" />
+            </div>
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#040404"/>
+                </svg>
+                <h3 className="text-2xl font-bold">インバウンド対応を効率化</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                日本語・英語・中国語・韓国語など複数言語に対応。外国人のお客様にも母国語で忘れ物検索が可能になり、言語の壁を気にせず対応できます。スタッフの語学力に頼らない、スマートなインバウンド対応を実現します。
+              </p>
             </div>
           </div>
         </div>
@@ -450,6 +480,69 @@ export default function Home() {
         </div>
       </section> */}
 
+      {/* Multilingual Staff CTA Section */}
+      <section id="contact" className="bg-gradient-to-br from-[#040404] to-[#1a1a1a] text-white py-16 md:py-20 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/10">
+            <div className="text-center mb-8">
+              <div className="inline-block bg-[#f67116] text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
+                経営者の皆さまへ
+              </div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                外国人対応のスタッフ採用に<br className="md:hidden" />お困りではありませんか？
+              </h2>
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                受付多言語対応用のAIや、<br className="sm:hidden" />コーポレートキャラクターによる自動対応もございます
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white/10 rounded-lg p-6 border border-white/20">
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#f67116] rounded-full p-3 flex-shrink-0">
+                    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">受付多言語対応AI</h3>
+                    <p className="text-gray-300 text-sm">
+                      来客対応から電話応対まで、複数言語で自動対応。人材不足を解消します。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/10 rounded-lg p-6 border border-white/20">
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#f67116] rounded-full p-3 flex-shrink-0">
+                    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="8" r="4" fill="white"/>
+                      <path d="M12 14c-6 0-8 3-8 3v3h16v-3s-2-3-8-3z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">キャラクター自動対応</h3>
+                    <p className="text-gray-300 text-sm">
+                      御社のキャラクターがAIで接客。ブランドイメージを保ちながら効率化を実現。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Button asChild className="bg-[#f67116] hover:bg-[#e56105] text-white px-8 md:px-12 py-4 md:py-6 text-base md:text-lg rounded-lg">
+                <a href="#contact">
+                  詳しく相談する
+                  <span className="ml-2">→</span>
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-[#fbfafa] py-20 px-6">
         <div className="container mx-auto max-w-4xl text-center">
@@ -513,7 +606,7 @@ export default function Home() {
                   <rect x="13" y="4" width="6" height="6" fill="white" />
                 </svg>
               </div>
-              <span className="font-bold">忘れ物サポートBot(仮)</span>
+              <span className="font-bold">忘れ物サポートBot</span>
             </div>
             <div className="flex items-center gap-4">
               <a href="#" className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
