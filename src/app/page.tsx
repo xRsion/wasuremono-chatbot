@@ -100,7 +100,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-wrap items-center justify-center gap-4 md:gap-8">
           <div className="text-xs md:text-sm font-bold">問い合わせ削減率 平均65%</div>
           <div className="text-xs md:text-sm">対応時間 平均70%短縮</div>
-          <div className="text-xs md:text-sm">導入実績 50施設以上</div>
+          {/* <div className="text-xs md:text-sm">導入実績 50施設以上</div> */}
         </div>
       </section>
 
@@ -208,8 +208,9 @@ export default function Home() {
       {/* How it works Section */}
       <section className="bg-white py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            導入から運用まで、シンプルな3ステップ
+          <h2 className="text-2xl md:text-3xl md:text-4xl font-bold text-center mb-12">
+            導入から運用まで、<br className="md:hidden"/>
+            シンプルな3ステップ
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -247,33 +248,33 @@ export default function Home() {
       {/* Benefits Section */}
       <section id="benefits" className="bg-[#fbfafa] py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-16">
             導入で得られるメリット
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
-            <div>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-16 items-center mb-16">
+            <div className="order-2 md:order-1">
               <div className="flex items-center gap-3 mb-4">
                 <Image src="/icons/chart-down.svg" alt="コスト削減" width={48} height={48} />
-                <h3 className="text-2xl font-bold">問い合わせ対応コストを大幅削減</h3>
+                <h3 className="text-lg md:text-2xl font-bold">問い合わせ対応コストを大幅削減</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
                 お客様が自分で忘れ物を検索できるため、電話やメールでの問い合わせが平均65%削減。スタッフは本来の業務に集中できます。
               </p>
             </div>
-            <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+            <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden order-1 md:order-2">
               <Image src="/assets/images/merit01.png" alt="コスト削減" width={400} height={225} className="object-cover w-full h-full" />
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-16 items-center mb-16">
             <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
               <Image src="/assets/images/merit02.png" alt="24時間対応" width={400} height={225} className="object-cover w-full h-full" />
             </div>
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <Image src="/icons/clock.svg" alt="24時間対応" width={48} height={48} />
-                <h3 className="text-2xl font-bold">24時間365日、自動で対応</h3>
+                <h3 className="text-lg md:text-2xl font-bold">24時間365日、自動で対応</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
                 営業時間外でもお客様が忘れ物を検索可能。「明日まで待てない」というお客様のストレスを解消し、顧客満足度が向上します。
@@ -281,22 +282,22 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
-            <div>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-16 items-center mb-16">
+            <div className="order-2 md:order-1">
               <div className="flex items-center gap-3 mb-4">
                 <Image src="/icons/refresh.svg" alt="リアルタイム更新" width={48} height={48} />
-                <h3 className="text-2xl font-bold">シンプルな管理で常に最新</h3>
+                <h3 className="text-lg md:text-2xl font-bold">シンプルな管理で常に最新</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
                 管理画面から忘れ物を登録・更新するだけで、チャットボットに即座に反映。複雑な操作は一切不要で、いつでも最新の忘れ物情報がお客様に届きます。
               </p>
             </div>
-            <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+            <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden order-1 md:order-2">
               <Image src="/assets/images/merit03.png" alt="リアルタイム更新" width={400} height={225} className="object-cover w-full h-full" />
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-16 items-center">
             <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
               <Image src="/assets/images/merit04.png" alt="インバウンド対応を効率化" width={400} height={225} className="object-cover w-full h-full" />
             </div>
@@ -305,7 +306,7 @@ export default function Home() {
                 <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#040404"/>
                 </svg>
-                <h3 className="text-2xl font-bold">インバウンド対応を効率化</h3>
+                <h3 className="text-lg md:text-2xl font-bold">インバウンド対応を効率化</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
                 日本語・英語・中国語・韓国語など複数言語に対応。外国人のお客様にも母国語で忘れ物検索が可能になり、言語の壁を気にせず対応できます。スタッフの語学力に頼らない、スマートなインバウンド対応を実現します。
@@ -481,17 +482,17 @@ export default function Home() {
       </section> */}
 
       {/* Multilingual Staff CTA Section */}
-      <section id="contact" className="bg-gradient-to-br from-[#040404] to-[#1a1a1a] text-white py-16 md:py-20 px-6">
+      <section id="contact" className="bg-gradient-to-br from-[#040404] to-[#1a1a1a] text-white py-16 md:py-20 px-3 md:px-6">
         <div className="container mx-auto max-w-5xl">
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/10">
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 px-3 md:px-6 border border-white/10">
             <div className="text-center mb-8">
               <div className="inline-block bg-[#f67116] text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
                 経営者の皆さまへ
               </div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+              <h2 className="text-lg md:text-3xl lg:text-4xl font-bold mb-4">
                 外国人対応のスタッフ採用に<br className="md:hidden" />お困りではありませんか？
               </h2>
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+              <p className="text-gray-300 text-sm md:text-lg leading-relaxed max-w-3xl mx-auto">
                 受付多言語対応用のAIや、<br className="sm:hidden" />コーポレートキャラクターによる自動対応もございます
               </p>
             </div>
