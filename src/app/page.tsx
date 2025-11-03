@@ -26,6 +26,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#features" className="hover:text-[#f67116] transition">機能</a>
             <a href="#benefits" className="hover:text-[#f67116] transition">導入メリット</a>
+            <a href="#pricing" className="hover:text-[#f67116] transition">料金プラン</a>
             <a href="#contact" className="hover:text-[#f67116] transition">お問い合わせ</a>
           </nav>
         </div>
@@ -481,6 +482,184 @@ export default function Home() {
         </div>
       </section> */}
 
+      {/* Pricing Section */}
+      <section id="pricing" className="bg-white py-16 md:py-20 px-4 md:px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">料金プラン</h2>
+            <p className="text-gray-600 text-base md:text-lg">
+              施設規模に応じた、分かりやすい料金体系
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {/* Plan 1: Small Business */}
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-[#f67116] transition-all duration-300 hover:shadow-xl">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold mb-2">スモールプラン</h3>
+                <p className="text-gray-600 text-sm">1〜3店舗のお店向け</p>
+              </div>
+
+              <div className="mb-6">
+                <div className="bg-[#fbfafa] rounded-lg p-4 mb-4">
+                  <div className="text-sm text-gray-600 mb-1">初期セッティング費用</div>
+                  <div className="text-3xl font-bold text-[#040404]">
+                    ¥98,000
+                    <span className="text-sm font-normal text-gray-600 ml-1">（税込）</span>
+                  </div>
+                </div>
+
+                <div className="bg-[#f67116] bg-opacity-10 rounded-lg p-4 border-2 border-[#f67116]">
+                  <div className="text-sm text-gray-700 mb-1">月額料金（12ヶ月契約）</div>
+                  <div className="text-3xl font-bold text-[#040404]">
+                    ¥6,900
+                    <span className="text-sm font-normal text-gray-600 ml-1">/月</span>
+                  </div>
+                  <div className="text-xs text-gray-600 mt-2">
+                    年払い: ¥69,000（月額換算 ¥5,750）
+                  </div>
+                </div>
+              </div>
+
+              {/* <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">忘れ物データベース管理</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">AIチャットボット（多言語対応）</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">問い合わせフォーム連携</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">基本サポート</span>
+                </li>
+              </ul> */}
+
+              <Button asChild className="w-full bg-[#f67116] hover:bg-[#e56105] text-white py-6 rounded-lg">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTuuZ84jt8ks1-Nys0bcz9MIEKS4VICX1cgjYwsw56bVMaGg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                  お問い合わせ
+                </a>
+              </Button>
+            </div>
+
+            {/* Plan 2: Chain Stores */}
+            <div className="bg-gradient-to-br from-[#f67116] to-[#e56105] rounded-2xl p-8 text-white relative transform md:scale-105 shadow-2xl">
+              <div className="absolute top-0 right-0 bg-[#040404] text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-xs font-bold">
+                人気
+              </div>
+
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold mb-2">チェーンプラン</h3>
+                <p className="text-white text-opacity-90 text-sm">4〜20店舗のチェーン店向け</p>
+              </div>
+
+              <div className="mb-6">
+                <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-4 mb-4">
+                  <div className="text-sm text-white text-opacity-90 mb-1">初期セッティング費用</div>
+                  <div className="text-3xl font-bold">
+                    ¥180,000
+                    <span className="text-sm font-normal text-white text-opacity-90 ml-1">（税込）</span>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-4">
+                  <div className="text-sm text-gray-700 mb-1">月額料金（店舗あたり）</div>
+                  <div className="text-3xl font-bold text-[#040404]">
+                    ¥4,500
+                    <span className="text-sm font-normal text-gray-600 ml-1">/月</span>
+                  </div>
+                  <div className="text-xs text-gray-600 mt-2">
+                    例: 10店舗の場合 月額¥45,000
+                  </div>
+                </div>
+              </div>
+
+              <Button asChild className="w-full bg-white hover:bg-gray-100 text-[#f67116] py-6 rounded-lg font-bold">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTuuZ84jt8ks1-Nys0bcz9MIEKS4VICX1cgjYwsw56bVMaGg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                  お問い合わせ
+                </a>
+              </Button>
+            </div>
+
+            {/* Plan 3: Enterprise */}
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-[#f67116] transition-all duration-300 hover:shadow-xl">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold mb-2">エンタープライズ</h3>
+                <p className="text-gray-600 text-sm">21店舗以上の大規模施設向け</p>
+              </div>
+
+              <div className="mb-6">
+                <div className="bg-[#fbfafa] rounded-lg p-4 mb-4 text-center py-8">
+                  <div className="text-4xl font-bold text-[#040404] mb-2">お見積もり</div>
+                  <div className="text-sm text-gray-600">
+                    施設規模に応じた<br />最適なプランをご提案
+                  </div>
+                </div>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                {/* <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">チェーンプランの全機能</span>
+                </li> */}
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">カスタマイズ対応</span>
+                </li>
+                {/* <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">専任担当者による導入支援</span>
+                </li> */}
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">API連携・既存システム統合</span>
+                </li>
+                {/* <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-[#f67116] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
+                  <span className="text-sm text-gray-700">24時間専用サポート</span>
+                </li> */}
+              </ul>
+
+              <Button asChild className="w-full bg-[#f67116] hover:bg-[#e56105] text-white py-6 rounded-lg">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTuuZ84jt8ks1-Nys0bcz9MIEKS4VICX1cgjYwsw56bVMaGg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                  お見積もり依頼
+                </a>
+              </Button>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 text-sm">
+              ※ 表示価格は全て税込です<br className="md:hidden" />
+              ※ カスタマイズや追加機能については別途お見積もりいたします
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Multilingual Staff CTA Section */}
       <section id="contact" className="bg-gradient-to-br from-[#040404] to-[#1a1a1a] text-white py-16 md:py-20 px-3 md:px-6">
         <div className="container mx-auto max-w-5xl">
@@ -534,7 +713,7 @@ export default function Home() {
 
             <div className="text-center">
               <Button asChild className="bg-[#f67116] hover:bg-[#e56105] text-white px-8 md:px-12 py-4 md:py-6 text-base md:text-lg rounded-lg">
-                <a href="#contact">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTuuZ84jt8ks1-Nys0bcz9MIEKS4VICX1cgjYwsw56bVMaGg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
                   詳しく相談する
                   <span className="ml-2">→</span>
                 </a>
@@ -585,6 +764,7 @@ export default function Home() {
               <div className="space-y-2 text-sm">
                 <div><a href="#features" className="text-gray-600 hover:text-[#f67116]">機能</a></div>
                 <div><a href="#benefits" className="text-gray-600 hover:text-[#f67116]">導入メリット</a></div>
+                <div><a href="#pricing" className="text-gray-600 hover:text-[#f67116]">料金プラン</a></div>
                 <div><a href="#contact" className="text-gray-600 hover:text-[#f67116]">お問い合わせ</a></div>
               </div>
             </div>
@@ -609,14 +789,14 @@ export default function Home() {
               </div>
               <span className="font-bold">忘れ物サポートBot</span>
             </div>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <a href="#" className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
                 <span className="text-xs">X</span>
               </a>
               <a href="#" className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
                 <span className="text-xs">📧</span>
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="text-center mt-8">
