@@ -19,8 +19,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <div className="font-bold text-lg">忘れ物サポートBot</div>
-              <div className="text-xs">忘れ物対応を、なくす。</div>
+              <div className="font-bold text-lg">忘れ物応対チャット</div>
+              <div className="text-xs">お客様の忘れ物を自動で探すAI</div>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="flex items-center justify-center order-1 md:order-2">
               <Image
                 src="/mocup.png"
-                alt="忘れ物サポートBot Mockup"
+                alt="忘れ物応対チャット Mockup"
                 width={600}
                 height={600}
                 className="w-full h-auto max-w-md md:max-w-full"
@@ -156,7 +156,7 @@ export default function Home() {
       <section id="features" className="bg-[#040404] text-white py-12 md:py-20 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 md:mb-4">
-            忘れ物サポートBotの
+            忘れ物応対チャットの
           </h2>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">
             主要機能
@@ -759,7 +759,16 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="font-bold mb-4">忘れ物サポートBot</h3>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-6 h-6 bg-[#040404] rounded flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-4 h-4">
+                    <rect x="4" y="4" width="6" height="6" fill="white" />
+                    <rect x="4" y="13" width="6" height="6" fill="white" />
+                    <rect x="13" y="4" width="6" height="6" fill="white" />
+                  </svg>
+                </div>
+                <span className="font-bold">忘れ物応対チャット</span>
+              </div>
               <p className="text-sm text-gray-600">
                 AIチャットボットで忘れ物対応を自動化。<br />
                 施設・店舗の業務効率化を実現します。
@@ -784,7 +793,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between pt-8 border-t">
+          {/* <div className="flex items-center justify-between pt-8 border-t">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 bg-[#040404] rounded flex items-center justify-center">
                 <svg viewBox="0 0 24 24" className="w-4 h-4">
@@ -793,17 +802,17 @@ export default function Home() {
                   <rect x="13" y="4" width="6" height="6" fill="white" />
                 </svg>
               </div>
-              <span className="font-bold">忘れ物サポートBot</span>
+              <span className="font-bold">忘れ物応対チャット</span>
             </div>
-            {/* <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4">
               <a href="#" className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
                 <span className="text-xs">X</span>
               </a>
               <a href="#" className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
                 <span className="text-xs">📧</span>
               </a>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
 
           <div className="text-center mt-8">
             <div className="flex justify-center gap-6 text-sm mb-4">
@@ -811,7 +820,7 @@ export default function Home() {
               <a href="#" className="hover:underline text-gray-600">プライバシーポリシー</a>
               <a href="#" className="hover:underline text-gray-600">特定商取引法に基づく表記</a>
             </div>
-            <p className="text-xs text-gray-500">© 2025 忘れ物サポートBot. All rights reserved.</p>
+            <p className="text-xs text-gray-500">© 2025 忘れ物応対チャット. All rights reserved.</p>
           </div>
         </div>
       </footer>
