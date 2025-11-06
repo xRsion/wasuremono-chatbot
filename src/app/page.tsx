@@ -510,13 +510,16 @@ export default function Home() {
                 </div>
 
                 <div className="bg-[#f67116] bg-opacity-10 rounded-lg p-4 border-2 border-[#f67116]">
-                  <div className="text-sm text-gray-700 mb-1">月額料金（12ヶ月契約）</div>
+                  <div className="text-sm text-gray-700 mb-1">月額料金</div>
                   <div className="text-3xl font-bold text-[#040404]">
                     ¥6,900
                     <span className="text-sm font-normal text-gray-600 ml-1">/月</span>
                   </div>
-                  <div className="text-xs text-gray-600 mt-2">
-                    年払い: ¥69,000（月額換算 ¥5,750）
+                  <div className="text-xs text-gray-600 mt-2 border-t border-gray-300 pt-2">
+                    年払い: ¥69,000/年（月額換算 ¥5,750）
+                  </div>
+                  <div className="inline-block mt-1 bg-[#f67116] text-white text-xs px-2 py-0.5 rounded">
+                    年払いで約17%お得
                   </div>
                 </div>
               </div>
@@ -581,8 +584,11 @@ export default function Home() {
                     ¥4,500
                     <span className="text-sm font-normal text-gray-600 ml-1">/月</span>
                   </div>
-                  <div className="text-xs text-gray-600 mt-2">
-                    例: 10店舗の場合 月額¥45,000
+                  <div className="text-xs text-gray-600 mt-2 border-t border-gray-200 pt-2">
+                    年払い: 店舗あたり¥45,000/年（月額換算 ¥3,750）
+                  </div>
+                  <div className="inline-block mt-1 bg-[#f67116] text-white text-xs px-2 py-0.5 rounded">
+                    年払いで約17%お得
                   </div>
                 </div>
               </div>
