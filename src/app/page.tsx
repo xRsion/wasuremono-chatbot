@@ -189,7 +189,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">多言語対応</h3>
               <p className="text-gray-300 text-xs md:text-sm leading-relaxed">
-                日本語・英語・中国語・韓国語など複数言語に対応。外国人のお客様もスムーズに忘れ物を検索でき、インバウンド対応の負担を軽減します。
+                日本語・英語・中国語・韓国語など80以上の言語に対応。外国人のお客様もスムーズに忘れ物を検索でき、インバウンド対応の負担を軽減します。
               </p>
             </div>
 
@@ -310,7 +310,7 @@ export default function Home() {
                 <h3 className="text-lg md:text-2xl font-bold">インバウンド対応を効率化</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                日本語・英語・中国語・韓国語など複数言語に対応。外国人のお客様にも母国語で忘れ物検索が可能になり、言語の壁を気にせず対応できます。スタッフの語学力に頼らない、スマートなインバウンド対応を実現します。
+                日本語・英語・中国語・韓国語など80以上の言語に対応。外国人のお客様にも母国語で忘れ物検索が可能になり、言語の壁を気にせず対応できます。スタッフの語学力に頼らない、スマートなインバウンド対応を実現します。
               </p>
             </div>
           </div>
